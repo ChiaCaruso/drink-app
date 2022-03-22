@@ -1,6 +1,6 @@
-<h1 align="center">🍸 DRINK APP 🍸<h1>
+<h1 align="center">🍸 DRINK APP 🍸</h1>
 <p align="center">
-  <img src="./public/mockup.png" alt="DrinkApp" width=350/>
+  <img src="./public/mockup.png" alt="DrinkApp" width=600/>
 </p>
 <br>
 <hr height:"2"/>
