@@ -16,7 +16,6 @@
     <li>NextJS</li>
     <li>ReactJS</li>
     <li>Axios</li>
-    <li>Musement API</li>
 </ul>
 <br>
 
