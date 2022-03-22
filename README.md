@@ -1,14 +1,14 @@
-<h1 align="center">🍸 DRINK APP 🍸<h1>
+<h1 align="center">🍸 DRINK APP 🍸</h1>
 <p align="center">
-  <img src="./public/mockup.png" alt="DrinkApp" width=350/>
+  <img src="./public/mockup.png" alt="DrinkApp" width=600/>
 </p>
 <br>
-<hr height:"2" color: "#4d856d"/>
-<p>Drink App è una web app realizzata grazie al database di <cite>TheCocktailDB</cite>. L'utente può cercare un cocktail in base al nome o all'ingrediente e aprendo la scheda troverà tutte le informazioni sulla preparazione.</p>
+<hr height:"2"/>
+<p>Drink App è una web app realizzata grazie al database di TheCocktailDB. L'utente può cercare un cocktail in base al nome o all'ingrediente e aprendo la scheda troverà tutte le informazioni sulla preparazione.</p>
 <br>
 
 <h3 >Tecnologie</h3>
-<hr height:"2" color: "#4d856d"/>
+<hr height:"2"/>
 <ul>
     <li>HTML</li>
     <li>SASS</li>
@@ -16,7 +16,6 @@
     <li>NextJS</li>
     <li>ReactJS</li>
     <li>Axios</li>
-    <li>Musement API</li>
 </ul>
 <br>
 
