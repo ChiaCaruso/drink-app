@@ -33,7 +33,7 @@ export default function About() {
                 <section className={styles.hero_wrapperText}>
                     <div className={styles.text}>
                         <h3>
-                            <q>L`&apos;`alcol è un liquido prezioso: conserva tutto, tranne i segreti.</q>
+                            <q>L&apos;alcol è un liquido prezioso: conserva tutto, tranne i segreti.</q>
                             <cite> Cary Grant</cite>
                         </h3>
                     </div>
