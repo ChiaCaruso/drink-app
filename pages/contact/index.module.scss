@@ -1,0 +1,111 @@
+@import "../../styles/library/variables.scss";
+@import "../../styles/library/mixin.scss";
+
+.wrapper {
+    display: grid;
+    height: 100%;
+    align-items: center;
+
+    @include container;
+
+    .text {
+        width: 100%;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        gap: 2rem;
+
+        h4 {
+            line-height: 1.4;
+            font-weight: 500;
+            max-width: 350px;
+            color: $primary-gray;
+        }
+    }
+
+    .wrapper_form {
+        margin: 2rem;
+        padding: 4rem;
+        display: grid;
+        background-color: white;
+        border-radius: $radius;
+        box-shadow: $light-shadow;
+
+        .form {
+            display: grid;
+            gap: 1rem;
+
+            .form_input {
+                display: grid;
+                gap: 0.4rem;
+
+                label {
+                    font-weight: 700;
+                    font-size: 1.2em;
+                    color: $primary-green;
+                }
+
+                input,
+                textarea {
+                    border-radius: 0;
+                    border-width: 0 0 1px 0;
+                    border-style: solid;
+                    border-color: $soft-darkGray;
+                    padding-left: 0.1rem;
+                    letter-spacing: $letter-spacing;
+                    resize: vertical;
+
+                    &:focus {
+                      outline: none; 
+                      font-size: 1rem; 
+                    }
+                }
+            }
+
+            .btn {
+                text-align: center;
+                padding: 0.9rem 2rem;
+                margin: 3rem auto 0;
+                background-color: $flickr-pink;
+                border: 5px solid $flickr-pink;
+                border-radius: $btn-radius;
+                color: white;
+                letter-spacing: $letter-spacing;
+                font-size: 0.9rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                transition: $transition;
+                cursor: pointer;
+    
+                &:hover {
+                    border: 5px solid $flickr-pink;
+                    background-color: transparent;
+                    color: $flickr-pink;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+
+    .wrapper {
+    
+        .text {
+            margin: 4rem 0;
+
+            h4 {
+                max-width: 650px;
+            }
+        }
+
+        .wrapper_form {
+            margin: 4rem 10rem;
+
+            input {
+                margin: 1.2rem 0 2rem;
+            }
+          }
+    }
+  }

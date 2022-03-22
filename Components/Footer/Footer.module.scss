@@ -1,0 +1,26 @@
+@import "../../styles/library/mixin.scss";
+@import "../../styles/library/variables.scss";
+
+.footer {
+  background-color: $primary-green;
+  height: 6rem;
+
+  .footer_wrapper {
+    display: grid;
+    place-items: center;
+    gap: 10px;
+    height: 100%;
+    font-variant: small-caps;
+    color: $text-color;
+
+    @include container;
+
+    h4 {
+      font-size: 1.3rem;
+    }
+
+    span {
+      color: $light-yellow;
+    }
+  }
+}

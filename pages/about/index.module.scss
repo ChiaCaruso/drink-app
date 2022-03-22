@@ -1,0 +1,66 @@
+@import "../../styles/library/mixin.scss";
+@import "../../styles/library/variables.scss";
+
+.hero_wrapperText {
+    display: grid;
+    height: 100%;
+    place-items: center;
+
+    .text {
+        padding: 15px;
+        border-style: solid none;
+        border-color: $light-yellow;
+        position: relative;
+        text-align: center;
+        line-height: 1.5;
+        max-width: 280px;
+        color: $light-gray;
+    }
+}
+
+.wrapperCard {
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: grid;
+    gap: 2rem;
+    background-color: $extra-lightGray;
+
+    @include container;
+
+    h3 {
+        text-align: center;
+        color: $primary-green;
+    }
+
+    .sectionCard {
+        display: grid;
+        place-items: center;
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .hero_wrapperText {
+        .text {
+            max-width: 520px;
+
+            cite {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .wrapperCard {
+        padding: 6rem 0;
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        .sectionCard {
+            padding: 0 3rem;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: unset;
+        }
+    }
+}

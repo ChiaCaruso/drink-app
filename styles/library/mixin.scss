@@ -1,0 +1,14 @@
+@mixin container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@mixin animate($animation, $duration, $method, $times) {
+  animation: $animation $duration $method $times;
+}
+
+@mixin keyframes($roller) {
+  @keyframes #{$roller} {
+    @content;
+  }
+}

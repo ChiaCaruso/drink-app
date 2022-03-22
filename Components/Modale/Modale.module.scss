@@ -1,0 +1,25 @@
+@import "../../styles/library/variables.scss";
+
+.wrapper {
+    position: fixed;
+    border-radius: $btn-radius;
+    background: $flickr-pink;
+    width: 500px;
+    display: flex;
+    padding: 2.5rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: $transition;
+    box-shadow: 0 0 0 2000px rgba(24, 22, 22, 0.8);
+
+    h3 {
+        text-align: center;
+        color: white;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+}

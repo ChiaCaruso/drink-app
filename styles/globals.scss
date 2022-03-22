@@ -1,0 +1,93 @@
+@import "./library/variables.scss";
+@import "./library/mixin.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: $dark-textColor;
+  font-family: "Open Sans", sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid $divider-color;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: $letter-spacing;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.7rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h4 {
+  font-size: 0.9rem;
+}
+p {
+  color: $primary-gray;
+  font-size: 0.9rem;
+  letter-spacing: $letter-spacing;
+}
+
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    line-height: 1;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+}

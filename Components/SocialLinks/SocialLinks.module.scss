@@ -1,0 +1,26 @@
+@import "../../styles/library/mixin.scss";
+@import "../../styles/library/variables.scss";
+
+.socialItem {
+  display: flex;
+
+  .linkItem {
+    transition: $btn-transition;
+
+    &:hover {
+      color: $flickr-pink;
+    }
+  }
+}
+
+.nav_icon {
+  color: $light-yellow;
+  padding: 0;
+  margin: 0 30px;
+  font-size: 25px;
+  transition: $btn-transition;
+
+  &:hover {
+    color: $flickr-pink;
+  }
+}

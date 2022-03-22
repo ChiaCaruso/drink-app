@@ -1,0 +1,96 @@
+@import "../../styles/library/variables.scss";
+@import "../../styles/library/mixin.scss";
+
+.wrapper {
+    cursor: pointer;
+    position: relative;
+    width: 300px;
+    margin: auto;
+    border-radius: $img-radius;
+    display: grid;
+    box-shadow: $light-shadow;
+
+    .image {
+        width: 100%;
+        height: 300px;
+        border-radius: $img-radius;
+    }
+
+    .textShow {
+        display: none;
+    }
+
+    .text {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        @include container;
+
+        .btn {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            transition: $transition;
+            color: $flickr-pink;
+
+            .icon {
+                padding: 0;
+                margin: 0;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .wrapper {
+        margin: unset;
+
+        .textShow {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            position: absolute;
+            bottom: 0;
+            overflow: hidden;
+            height: 0;
+            opacity: 0;
+            width: 100%;
+            background-color: transparent;
+            color: $text-color;
+            transition: $transition;
+
+            @include container;
+
+            .btn {
+                display: flex;
+                align-items: center;
+                gap: 0.7rem;
+                transition: $transition;
+                color: $flickr-pink;
+    
+                .icon {
+                    padding: 0;
+                    margin: 0;
+                    font-size: 1rem;
+                }
+            }            
+        }
+
+        .showInfo {
+            background-color: transparent;
+            background-color: rgba(0, 0, 0, 0.8);
+            opacity: 1;
+            height: 20%;
+          }
+
+        .text {
+            display: none;
+        }
+    }
+}

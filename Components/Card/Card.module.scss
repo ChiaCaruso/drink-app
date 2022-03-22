@@ -1,0 +1,58 @@
+@import "../../styles/library/variables.scss";
+
+.wrapper {
+    width: 80%;
+    padding: 2rem 0;
+    background-color: #fff;
+    border-radius: $radius;
+    transition: $transition;
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    &:hover {
+        transform: scale(1.03);
+        background-color: $primary-green;
+        color: white;
+
+        .text p {
+            color: $extra-lightGray;
+        }
+    }
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+        color: $dark-gray;
+    }
+
+    .icon {
+        font-size: 2rem;
+        padding: 0;
+        color: $flickr-pink;
+    }
+
+    .text {
+        max-width: 180px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .wrapper {
+        width: 100%;
+
+        .text {
+            font-size: 1.2rem;
+            max-width: 300px;
+        }
+    }
+}

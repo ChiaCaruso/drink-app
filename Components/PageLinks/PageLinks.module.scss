@@ -1,0 +1,21 @@
+@import "../../styles/library/mixin.scss";
+@import "../../styles/library/variables.scss";
+
+.linkItem {
+    transition: $btn-transition;
+
+    &:hover {
+        color: $flickr-pink;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+}
+
+.active {
+    border-bottom: 2px solid $flickr-pink;
+}
+
+@media screen and (min-width: 992px) {
+}

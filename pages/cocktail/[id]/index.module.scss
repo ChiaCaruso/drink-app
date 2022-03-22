@@ -1,0 +1,129 @@
+@import "../../../styles/library/variables.scss";
+@import "../../../styles/library/mixin.scss";
+
+.main {
+  height: auto;
+  min-height: 82vh;
+  padding: 2rem 1rem;
+
+  header {
+    margin: 2rem 0;
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+
+    .icon {
+      font-size: 2.5rem;
+      transition: $transition;
+      color: $flickr-pink;
+
+      &:hover {
+        color: $byzantine;
+        transform: scale(1.02);
+      }
+    }
+
+    h4 {
+      text-transform: uppercase;
+      color: $primary-gray;
+      font-weight: 500;
+    }
+  }
+
+  section {
+    margin-top: 1rem;
+    display: grid;
+    gap: 2rem;
+
+    img {
+      width: 100%;
+      border-radius: $radius;
+    }
+
+    .text {
+      display: grid;
+      gap: 1rem;
+
+      .text_details {
+        display: grid;
+        gap: 0.5rem;
+
+        h2 {
+          text-transform: uppercase;
+        }
+
+        .text_details_label {
+          display: grid;
+          grid-template-columns: auto auto auto;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 0.5rem;
+
+          p {
+            text-transform: lowercase;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: $letter-spacing;
+            font-variant: small-caps;
+            color: $soft-darkGray;
+            border: 1px solid transparent;
+            border-radius: $radius;
+            background-color: $extra-lightGray;
+            padding: 0rem 0.5rem;
+          }
+        }
+      }
+
+      .text_description {
+        h4 {
+          margin-bottom: 0.7rem;
+        }
+
+        .list {
+          list-style-position: inside;
+
+          .info {
+            color: $soft-darkGray;
+            max-width: 350px;
+          }
+        }
+      }
+      .info {
+        color: $soft-darkGray;
+      }
+      h4 {
+        color: $dark-gray;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .main {
+    padding: 3rem;
+
+    section {
+      grid-template-columns: repeat(12, 1fr);
+
+      img {
+        width: 100%;
+        grid-area: 1 / 1 / 1 / 5;
+        grid-row: 1/1;
+      }
+
+      .text {
+        grid-area: 1 / 6 / 1 / -1;
+
+        .text_details {
+          .text_details_label {
+            p {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
